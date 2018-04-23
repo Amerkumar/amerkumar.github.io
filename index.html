@@ -8,69 +8,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <link rel="stylesheet" href="bulma-extensions.min.css">
-    <link rel="stylesheet" href="bulma-extensions.min.css">
+    <link rel="stylesheet" href="bulma-extensions.sass">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
 </head>
 
 <body>
 
-    <!-- Navbar -->
+    <!-- Navbar
     <nav class="navbar is-transparent is-fixed-bottom">
-        <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <div class="navbar-brand">
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </div>
 
-        <div id="navMenu" class="navbar-menu">
-            <div class="navbar-start">
-            </div>
-                <div class="navbar-item">
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
-                                href="#about">
-                                <span class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                <span>
-                                    About
-                                </span>
-                            </a>
-                        </p>
-                    </div>
+            <div id="navMenu" class="navbar-menu is-clearfix">
+                <div class="navbar-start">
+
                     <div class="navbar-item">
-                        <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
-                             href="#experience">
-                                <span class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                <span>
-                                    Experience
-                                </span>
-                            </a>
-                        </p>
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button" href="#about">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        About
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="navbar-item">
+                            <p class="control">
+                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    href="#experience">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Experience
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="navbar-item">
+                            <p class="control">
+                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    href="#education">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Education
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="navbar-item">
-                        <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
-                                href="#education">
-                                <span class="icon">
-                                    <i class="fab fa-twitter"></i>
-                                </span>
-                                <span>
-                                    Education
-                                </span>
-                            </a>
-                        </p>
-                    </div>
-                
+                </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
 
 
@@ -78,10 +80,10 @@
     <section class="hero is-info is-fullheight has-background-link">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    I am Amer Kumar
+                <h1 class="title is-size-2 has-text-weight-bold has-text-justified">
+                    Amer Kumar
                 </h1>
-                <p class="subtitle">Looking for Computer Science and Software.</p>
+                <p class="subtitle is-italic has-text-justified">Looking for Position of Software Engineer.</p>
             </div>
         </div>
     </section>
@@ -89,203 +91,258 @@
     <section id="about" class="section has-background-light">
         <div class="container">
             <div class="columns">
-                <div class="column is-2 is-offset-1">
-                    <p class="title is-3">About</p>
-                    <p class="subtitle is-5">ICON Here</p>
+                <div class="column is-3 is-offset-1">
+                    <section class="section">
+                        <p class="title is-size-3 has-text-weight-bold has-text-left">About</p>
+                        <p class="subtitle has-text-left">
+                            <span class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </span>
+                        </p>
+                    </section>
                 </div>
                 <div class="column">
-                    <p class="has-text-dark">Life Long Learner and Risk Taker.</p>
+                    <section class="section box">
+                        <p class="has-text-dark has-text-weight-semibold">A life long learner and risk taker who want to explore new endeavours that come in my way. I love
+                            mathematics, programming and computer science in general.</p>
+                    </section>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section has-background-link">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-2 is-offset-1">
-                    <p class="title is-4 has-text-white">Experience</p>
-                    <p class="subtitle is-5">ICON Here</p>
-                </div>
-                <div class="column">
-                    <div class="box">
-                        <p class="title is-4">TeraData</p>
-                        <p class="subtitle is-5">June 2017 - July 2017</p>
-                        <p>Performed Sentiment Analysis on Twitter Data.</p>
-                    </div>
-                    <div class="box">
-                        <p class="title is-4">TeraData</p>
-                        <p class="subtitle is-5">June 2017 - July 2017</p>
-                        <p>Performed Sentiment Analysis on Twitter Data.</p>
-                    </div>
-                    <div class="box">
-                        <p class="title is-4">TeraData</p>
-                        <p class="subtitle is-5">June 2017 - July 2017</p>
-                        <p>Performed Sentiment Analysis on Twitter Data.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Education Here -->
-    <section id="education" class="section">
+    <section id="education" class="section has-background-link">
         <div class="container">
             <div class="columns">
-                <div class="column is-2 is-offset-1">
-                    <p class="title is-4 has-text-dark">Education</p>
-                    <p class="subtitle is-5">ICON Here</p>
+                <div class="column is-3 is-offset-1">
+                    <section class="section">
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-light">Education</p>
+                        <p class="subtitle has-text-left  has-text-light">
+                            <span class="icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </span>
+                        </p>
+                    </section>
                 </div>
                 <div class="column">
-                    <section>
-                        <p class="subtitle is-5">June 2017 - July 2017</p>
-                        <p class="title">Bachelor of Computer Engineering</p>
-                        <p class="subtitle">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</p>
-
+                    <section class="section box has-background-link">
+                        <p class="subtitle is-5 has-text-light has-text-weight-light">2014 - 2018</p>
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-light">Bachelor of Computer Engineering</p>
+                        <p class="subtitle is-5 has-text-weight-normal has-text-light">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</p>
                     </section>
-                    <br>
-                    <section>
-                        <p class="subtitle is-5">June 2017 - July 2017</p>
-                        <p class="title">FSc. Pre Engineering</p>
-                        <p class="subtitle">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology</p>
+
+                    <section class="section box has-background-link">
+                        <p class="subtitle is-5 has-text-light has-text-weight-light">2011 - 2013</p>
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-light">FSc. Pre Engineering</p>
+                        <p class="subtitle is-5 has-text-weight-normal has-text-light">Bahria College NORE - 1 Karachi</p>
                     </section>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Experience Section -->
+    <section id="experience" class="section has-background-light">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3 is-offset-1">
+                    <section class="section">
+                        <p class="title is-size-3 has-text-weight-bold has-text-left">Experience</p>
+                        <p class="subtitle has-text-left">
+                            <span class="icon">
+                                <i class="fas fa-briefcase"></i>
+                            </span>
+                        </p>
+                    </section>
+                </div>
+                <div class="column">
+                    <section class="section box">
+                        <p class="subtitle is-5 has-text-dark has-text-weight-light">Aug 2017 - Apr 2018</p>
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-dark">System Administrator</p>
+                        <p class="subtitle is-5 has-text-dark has-text-weight-bold">The GIK WebTeam</p>
+
+                        <p class="subtitle is-5 has-text-weight-normal has-text-dark">Description Here</p>
+                    </section>
+                    <section class="section box">
+                        <p class="subtitle is-5 has-text-dark has-text-weight-light">June 2017 - July 2017</p>
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-dark">Sentiment Analysis</p>
+                        <p class="subtitle is-5 has-text-weight-normal has-text-dark">Loading Real Time Twitter Tweets using Flume in Hadoop Framework and performing sentiment analysis
+                            by using dictionary of rated words.</p>
+                    </section>
+                </div>
+            </div>
+    </section>
+
     <!-- Projects section -->
-    <section class="section has-background-light">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-2 is-offset-1">
-                    <p class="title is-4 has-text-dark">Projects</p>
-                    <p class="subtitle is-5">ICON Here</p>
-                </div>
-                <div class="column">
-                    <div class="timeline is-centered">
-                        <header class="timeline-header">
-                            <span class="tag is-medium is-primary">Start</span>
-                        </header>
-                        <div class="timeline-item is-primary">
-                            <div class="timeline-marker is-primary"></div>
-                            <div class="timeline-content">
-                                <p class="heading">January 2016</p>
-                                <p>Timeline content - Can include any HTML element</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="http://bulma.io/images/placeholders/32x32.png">
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">February 2016</p>
-                                <p>Timeline content - Can include any HTML element</p>
-                            </div>
-                        </div>
-                        <header class="timeline-header">
-                            <span class="tag is-primary">2017</span>
-                        </header>
-                        <div class="timeline-item is-danger">
-                            <div class="timeline-marker is-danger is-icon">
-                                <i class="fa fa-flag"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">March 2017</p>
-                                <p>Timeline content - Can include any HTML element</p>
-                            </div>
-                        </div>
-                        <header class="timeline-header">
-                            <span class="tag is-medium is-primary">End</span>
-                        </header>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
     <section class="section has-background-link">
         <div class="container">
             <div class="columns">
-                <div class="column is-2 is-offset-1">
-                    <p class="title is-4 has-text-dark">SKILLSET</p>
-                    <p class="subtitle is-5">ICON Here</p>
+                <div class="column is-3 is-offset-1">
+                    <section class="section">
+                        <p class="title is-3 has-text-weight-bold has-text-left has-text-light">Project</p>
+                        <p class="subtitle has-text-left  has-text-light">
+                            <span class="icon">
+                                <i class="fab fa-leanpub"></i>
+                            </span>
+                        </p>
+                    </section>
                 </div>
                 <div class="column">
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
+                    <section class="section box has-background-link">
+                        <p class="title is-4 has-text-weight-semibold has-text-left has-text-light">Simon Game Implementation Using Logic Gates
+                            <span class="subtitle is-5 has-text-light has-text-weight-light">11/2015 - 12/2015</span>
+                        </p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-4">Digital Fundaments Projects.</span> What i learnt from this project that it is very difficult
+                            to make simon game using simple logic ICs such as adder, mux , decoders etc. yet not impossible.</p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-5">Result </span>I was not able to complete it.</p>
+                    </section>
+                    <section class="section box has-background-link">
+                        <p class="title is-4 has-text-weight-semibold has-text-left has-text-light">Simon Game Implementation Using Logic Gates
+                            <span class="subtitle is-5 has-text-light has-text-weight-light">11/2015 - 12/2015</span>
+                        </p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-4">Digital Fundaments Projects.</span> What i learnt from this project that it is very difficult
+                            to make simon game using simple logic ICs such as adder, mux , decoders etc. yet not impossible.</p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-5">Result </span>I was not able to complete it.</p>
+                    </section>
+                    <section class="section box has-background-link">
+                        <p class="title is-4 has-text-weight-semibold has-text-left has-text-light">Simon Game Implementation Using Logic Gates
+                            <span class="subtitle is-5 has-text-light has-text-weight-light">11/2015 - 12/2015</span>
+                        </p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-4">Digital Fundaments Projects.</span> What i learnt from this project that it is very difficult
+                            to make simon game using simple logic ICs such as adder, mux , decoders etc. yet not impossible.</p>
+                        <p class="subtitle is-6 has-text-weight-normal has-text-light">
+                            <span class="has-text-weight-semibold is-5">Result </span>I was not able to complete it.</p>
+                    </section>
+                </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-3 is-offset-1">
+                    <section class="section">
+                        <p class="title is-size-3 has-text-weight-bold has-text-left">Skills</p>
+                        <p class="subtitle has-text-left">
+                            <span class="icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </span>
+                        </p>
+                    </section>
                 </div>
                 <div class="column">
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
-                    <p class="title is-4">HTML</p>
-                    <progress class="progress is-info" value="45" max="100">45%</progress>
+                    <section class="section">
+                        <div class="field is-grouped is-grouped-multiline">
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Technology</a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">CSS</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Flexbox</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Web Design</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Open Source</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Community</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Documentation</a>
+                                    <a class="tag is-delete"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section class="section">
+    <section class="section has-background-white-ter">
 
         <div class="container">
-            <h1 class="title is-centered">Achievements</h1>
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <div class="tile is-child box is-4">
-                        <article class="notification is-warning">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
+                <section class="section">
+                        <h1 class="title is-3 has-text-centered has-text-weight-bold">Achievements</h1>
+                        
+                            
+                        
+                    </section>
+           
+            <div class="timeline is-centered">
+                    <header class="timeline-header">
+                        <span class="tag is-medium has-text-darker has-text-weight-semibold">Start</span>
+                    </header>
+                    <div class="timeline-item"></div>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-primary"></div>
+                        <div class="timeline-content">
+                            <p class="heading has-text-darker has-text-weight-normal">January 2016</p>
+                            <p class="has-text-light">Timeline content - Can include any HTML element</p>
+                        </div>
                     </div>
-                    <div class="tile is-child is-4 box ">
-                        <article class="notification is-success">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
+                    <div class="timeline-item">
+                        <div class="timeline-marker is-primary"></div>
+                        <div class="timeline-content">
+                            <p class="heading has-text-darker has-text-weight-normal">January 2016</p>
+                            <p class="has-text-light">Timeline content - Can include any HTML element</p>
+                        </div>
                     </div>
-                    <div class="tile is-child is-4 box ">
-                        <article class="notification is-primary">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
+                    <header class="timeline-header">
+                        <span class="tag is-primary">2017</span>
+                    </header>
+                    <div class="timeline-item is-danger">
+                        <div class="timeline-marker is-danger is-icon">
+                            <i class="fa fa-flag"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <p class="heading">March 2017</p>
+                            <p>Timeline content - Can include any HTML element</p>
+                        </div>
                     </div>
+                    <header class="timeline-header">
+                        <span class="tag is-medium is-primary">End</span>
+                    </header>
                 </div>
-            </div>
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <div class="tile is-child box is-4">
-                        <article class="notification is-warning">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
-                    </div>
-                    <div class="tile is-child is-4 box ">
-                        <article class="notification is-success">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
-                    </div>
-                    <div class="tile is-child is-4 box ">
-                        <article class="notification is-primary">
-                            <p class="title">Introduction to CS50 by Harvard University</p>
-                            <p class="subtitle">Lorem ipsum dolor is amet</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
         <br>
+        
     </section>
 
     <!-- footer section to contact -->
@@ -302,80 +359,77 @@
 
 
     <!-- This is for smooth scrolling. -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script>
         // Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
         });
-      }
-    }
-  });
-
-document.addEventListener('DOMContentLoaded', function () {
-
-// Get all "navbar-burger" elements
-var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Check if there are any navbar burgers
-if ($navbarBurgers.length > 0) {
-
-  // Add a click event on each of them
-  $navbarBurgers.forEach(function ($el) {
-    $el.addEventListener('click', function () {
-
-      // Get the target from the "data-target" attribute
-      var target = $el.dataset.target;
-      var $target = document.getElementById(target);
-
-      // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-      $el.classList.toggle('is-active');
-      $target.classList.toggle('is-active');
-
-    });
-  });
-}
-
-});
-//   $(window).scroll(function () {
-// if ($(window).scrollTop() >= 50) {
-// $('.navbar').css('background-color','block');
-// } else {
-// $('.navbar').css('display','none');
-// }
-// });
+        //   $(window).scroll(function () {
+        // if ($(window).scrollTop() >= 50) {
+        // $('.navbar').css('background-color','block');
+        // } else {
+        // $('.navbar').css('display','none');
+        // }
+        // });
     </script>
 </body>
 
