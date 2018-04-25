@@ -16,70 +16,108 @@
         .background-image {
             background-image: url("images/hero-image.jpg");
         }
+
+        #navMenuContainer {
+            width: 100% !important;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            align-items: center;
+            justify-items: center;
+        }
+
+
+        @media screen and (max-width: 992px) {
+ 
+           #main-nav {
+               display: none;
+           }
+
+        }
+        
+
     </style>
 </head>
 
 <body>
 
-    <!-- Navbar
-    <nav class="navbar is-transparent is-fixed-bottom">
+    <!-- Navbar -->
+    <nav id="main-nav" class="navbar is-transparent is-fixed-top">
         <div class="container">
-            <div class="navbar-brand">
-                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
 
-            <div id="navMenu" class="navbar-menu is-clearfix">
-                <div class="navbar-start">
+            <div id="navMenu" class="navbar-menu is-active">
+                <div id="navMenuContainer" class="navbar-start is-centered">
 
                     <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="bd-tw-button button" href="#about">
-                                    <span class="icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </span>
+                           
+                                <a href="#about">
                                     <span>
                                         About
                                     </span>
                                 </a>
-                            </p>
-                        </div>
-                        <div class="navbar-item">
-                            <p class="control">
-                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
-                                    href="#experience">
-                                    <span class="icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </span>
-                                    <span>
-                                        Experience
-                                    </span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="navbar-item">
-                            <p class="control">
-                                <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
-                                    href="#education">
-                                    <span class="icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </span>
+
+                    </div>
+                    <div class="navbar-item">
+                           
+                                <a href="#education">
                                     <span>
                                         Education
                                     </span>
                                 </a>
-                            </p>
-                        </div>
+                            
                     </div>
+                    <div class="navbar-item">
+                           
+                                <a  href="#experience">
+                                    <span>
+                                        Experience
+                                    </span>
+                                </a>
+                            
+                    </div>
+                    <div class="navbar-item">
+                           
+                                <a  href="#projects">
+                                    <span>
+                                        Projects
+                                    </span>
+                                </a>
+                           
+                    </div>
+                    <div class="navbar-item">
+                           
+                                <a href="#skills">
+                                    <span>
+                                        Skills
+                                    </span>
+                                </a>
+                            
+                    </div>
+
+                    <div class="navbar-item">
+                           
+                            <a href="#achievements">
+                                <span>
+                                    Achievements
+                                </span>
+                            </a>
+                        
+                </div>
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
 
+    <!-- Up Button -->
+    <!-- <div class="tabs">
+            <ul>
+              <li>
+                <a>
+                  <span class="icon"><i class="fas fa-angle-up" aria-hidden="true"></i></span>
+                  <span>Up</span>
+                </a>
+            </li>
+            </ul>
+          </div> -->
 
 
     <!-- Hero Section -->
@@ -188,7 +226,7 @@
     </section>
 
     <!-- Projects section -->
-    <section class="section has-background-link">
+    <section id="projects" class="section has-background-link">
         <div class="container">
             <div class="columns">
                 <div class="column is-3 is-offset-1">
@@ -297,7 +335,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section has-background-light">
+    <section id="skills" class="section has-background-light">
         <div class="container">
             <div class="columns">
                 <div class="column is-3 is-offset-1">
@@ -394,18 +432,18 @@
                             </div>
 
                             <div class="control">
-                                    <div class="tags has-addons">
-                                        <a class="tag is-link">MATLAB</a>
-    
-                                    </div>
-                                </div>
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">MATLAB</a>
 
-                                <div class="control">
-                                        <div class="tags has-addons">
-                                            <a class="tag is-link">Machine Learning</a>
-        
-                                        </div>
-                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Machine Learning</a>
+
+                                </div>
+                            </div>
 
                             <div class="control">
                                 <div class="tags has-addons">
@@ -427,7 +465,7 @@
     </section>
 
     <!-- Achievements Section -->
-    <section class="section has-background-white-ter">
+    <section id="achievements" class="section has-background-white-ter">
 
         <div class="container">
             <section class="section">
@@ -456,27 +494,27 @@
                     <span class="tag is-link">2017</span>
                 </header>
                 <div class="timeline-item">
-                        <div class="timeline-marker is-link"></div>
-                        <div class="timeline-content">
-                            <p class="heading has-text-darker has-text-weight-normal">January 2017 - May 2017</p>
-                            <p class="has-text-weight-semibold has-text-darker">Android Basic Nanodegree by Udacity</p>
-                        </div>
+                    <div class="timeline-marker is-link"></div>
+                    <div class="timeline-content">
+                        <p class="heading has-text-darker has-text-weight-normal">January 2017 - May 2017</p>
+                        <p class="has-text-weight-semibold has-text-darker">Android Basic Nanodegree by Udacity</p>
                     </div>
+                </div>
                 <div class="timeline-item">
-                        <div class="timeline-marker is-link"></div>
-                        <div class="timeline-content">
-                            <p class="heading has-text-darker has-text-weight-normal">June 2017 - July 2017</p>
-                            <p class="has-text-weight-semibold has-text-darker">Introduction to CS50 by Harvard University</p>
-                        </div>
+                    <div class="timeline-marker is-link"></div>
+                    <div class="timeline-content">
+                        <p class="heading has-text-darker has-text-weight-normal">June 2017 - July 2017</p>
+                        <p class="has-text-weight-semibold has-text-darker">Introduction to CS50 by Harvard University</p>
                     </div>
+                </div>
 
-                    <div class="timeline-item">
-                            <div class="timeline-marker is-link"></div>
-                            <div class="timeline-content">
-                                <p class="heading has-text-darker has-text-weight-normal">August 2017 - July 2018</p>
-                                <p class="has-text-weight-semibold has-text-darker">System Administrator - The GIK WebTeam</p>
-                            </div>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker is-link"></div>
+                    <div class="timeline-content">
+                        <p class="heading has-text-darker has-text-weight-normal">August 2017 - July 2018</p>
+                        <p class="has-text-weight-semibold has-text-darker">System Administrator - The GIK WebTeam</p>
+                    </div>
+                </div>
                 <header class="timeline-header">
                     <span class="tag is-link">End</span>
                 </header>
@@ -538,31 +576,32 @@
                 }
             });
 
-        document.addEventListener('DOMContentLoaded', function () {
+//        document.addEventListener('DOMContentLoaded', function () {
 
-            // Get all "navbar-burger" elements
-            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+// // Get all "navbar-burger" elements
+// var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
+// // Check if there are any navbar burgers
+// if ($navbarBurgers.length > 0) {
 
-                // Add a click event on each of them
-                $navbarBurgers.forEach(function ($el) {
-                    $el.addEventListener('click', function () {
+//   // Add a click event on each of them
+//   $navbarBurgers.forEach(function ($el) {
+//     $el.addEventListener('click', function () {
 
-                        // Get the target from the "data-target" attribute
-                        var target = $el.dataset.target;
-                        var $target = document.getElementById(target);
+//       // Get the target from the "data-target" attribute
+//       var target = $el.dataset.target;
+//       var $target = document.getElementById(target);
 
-                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                        $el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
+//       // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+//       $el.classList.toggle('is-active');
+//       $target.classList.toggle('is-active');
 
-                    });
-                });
-            }
+//     });
+//   });
+// }
 
-        });
+// });
+
         //   $(window).scroll(function () {
         // if ($(window).scrollTop() >= 50) {
         // $('.navbar').css('background-color','block');
