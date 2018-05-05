@@ -27,95 +27,105 @@
 
 
         @media screen and (max-width: 992px) {
- 
-           #main-nav {
-               display: none;
-           }
+
+            #main-nav {
+                /* display: none; */
+            }
+
+            #navMenuContainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
         }
-        
-
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118119813-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118119813-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-118119813-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118119813-1');
+    </script>
 
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <!-- <nav id="main-nav" class="navbar is-transparent is-fixed-top">
-        <div class="container">
+    <nav id="main-nav" class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
 
-            <div id="navMenu" class="navbar-menu is-active">
-                <div id="navMenuContainer" class="navbar-start is-centered">
+            <a id="navButton" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navMenu" class="navbar-menu is-active">
+            <div id="navMenuContainer" class="navbar-start">
 
-                    <div class="navbar-item">
-                           
-                                <a href="#about">
-                                    <span>
-                                        About
-                                    </span>
-                                </a>
+                <div class="navbar-item">
 
-                    </div>
-                    <div class="navbar-item">
-                           
-                                <a href="#education">
-                                    <span>
-                                        Education
-                                    </span>
-                                </a>
-                            
-                    </div>
-                    <div class="navbar-item">
-                           
-                                <a  href="#experience">
-                                    <span>
-                                        Experience
-                                    </span>
-                                </a>
-                            
-                    </div>
-                    <div class="navbar-item">
-                           
-                                <a  href="#projects">
-                                    <span>
-                                        Projects
-                                    </span>
-                                </a>
-                           
-                    </div>
-                    <div class="navbar-item">
-                           
-                                <a href="#skills">
-                                    <span>
-                                        Skills
-                                    </span>
-                                </a>
-                            
-                    </div>
+                    <a href="#about">
+                        <span>
+                            About
+                        </span>
+                    </a>
 
-                    <div class="navbar-item">
-                           
-                            <a href="#achievements">
-                                <span>
-                                    Achievements
-                                </span>
-                            </a>
-                        
                 </div>
+                <div class="navbar-item">
+
+                    <a href="#education">
+                        <span>
+                            Education
+                        </span>
+                    </a>
+
+                </div>
+                <div class="navbar-item">
+
+                    <a href="#experience">
+                        <span>
+                            Experience
+                        </span>
+                    </a>
+
+                </div>
+                <div class="navbar-item">
+
+                    <a href="#projects">
+                        <span>
+                            Projects
+                        </span>
+                    </a>
+
+                </div>
+                <div class="navbar-item">
+
+                    <a href="#skills">
+                        <span>
+                            Skills
+                        </span>
+                    </a>
+
+                </div>
+
+                <div class="navbar-item">
+
+                    <a href="#achievements">
+                        <span>
+                            Achievements
+                        </span>
+                    </a>
+
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
 
     <!-- Up Button -->
     <!-- <div class="tabs">
@@ -382,6 +392,13 @@
 
                             <div class="control">
                                 <div class="tags has-addons">
+                                    <a class="tag is-link">CSS3 Grids</a>
+
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
                                     <a class="tag is-link">HTML5</a>
 
                                 </div>
@@ -416,6 +433,13 @@
                             <div class="control">
                                 <div class="tags has-addons">
                                     <a class="tag is-link">Python</a>
+
+                                </div>
+                            </div>
+
+                            <div class="control">
+                                <div class="tags has-addons">
+                                    <a class="tag is-link">Flask</a>
 
                                 </div>
                             </div>
@@ -517,12 +541,32 @@
                         <p class="has-text-weight-semibold has-text-darker">Introduction to CS50 by Harvard University</p>
                     </div>
                 </div>
-
+                `
+                <div class="timeline-item">
+                    <div class="timeline-marker is-link"></div>
+                    <div class="timeline-content">
+                        <p class="heading has-text-darker has-text-weight-normal">September 2017</p>
+                        <p class="has-text-weight-semibold has-text-darker">Session on Introduction to Computer Science for the new Batch of GIK</p>
+                    </div>
+                </div>
+                <header class="timeline-header">
+                    <span class="tag is-link">2018</span>
+                </header>
                 <div class="timeline-item">
                     <div class="timeline-marker is-link"></div>
                     <div class="timeline-content">
                         <p class="heading has-text-darker has-text-weight-normal">August 2017 - July 2018</p>
                         <p class="has-text-weight-semibold has-text-darker">System Administrator - The GIK WebTeam</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker is-link"></div>
+                    <div class="timeline-content">
+                        <p class="heading has-text-darker has-text-weight-normal">April 2018</p>
+                        <p class="has-text-weight-semibold has-text-darker">Digital Identity Workshop</p>
+                        <p class="has-text-weight-semibold has-text-darker">One Page Resume Webpage on Github Pages in one hour.</p>
+
                     </div>
                 </div>
                 <header class="timeline-header">
@@ -539,7 +583,7 @@
             <div class="content has-text-centered">
                 <p>
                     <strong>CV</strong> by
-                    <a href="#">Amer Kumar</a>
+                    <a href="cv/amer_resume.pdf" target="_blank">Amer Kumar</a>
                 </p>
             </div>
         </div>
@@ -586,31 +630,31 @@
                 }
             });
 
-//        document.addEventListener('DOMContentLoaded', function () {
+        //        document.addEventListener('DOMContentLoaded', function () {
 
-// // Get all "navbar-burger" elements
-// var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        // // Get all "navbar-burger" elements
+        // var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-// // Check if there are any navbar burgers
-// if ($navbarBurgers.length > 0) {
+        // // Check if there are any navbar burgers
+        // if ($navbarBurgers.length > 0) {
 
-//   // Add a click event on each of them
-//   $navbarBurgers.forEach(function ($el) {
-//     $el.addEventListener('click', function () {
+        //   // Add a click event on each of them
+        //   $navbarBurgers.forEach(function ($el) {
+        //     $el.addEventListener('click', function () {
 
-//       // Get the target from the "data-target" attribute
-//       var target = $el.dataset.target;
-//       var $target = document.getElementById(target);
+        //       // Get the target from the "data-target" attribute
+        //       var target = $el.dataset.target;
+        //       var $target = document.getElementById(target);
 
-//       // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-//       $el.classList.toggle('is-active');
-//       $target.classList.toggle('is-active');
+        //       // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        //       $el.classList.toggle('is-active');
+        //       $target.classList.toggle('is-active');
 
-//     });
-//   });
-// }
+        //     });
+        //   });
+        // }
 
-// });
+        // });
 
         //   $(window).scroll(function () {
         // if ($(window).scrollTop() >= 50) {
@@ -619,6 +663,14 @@
         // $('.navbar').css('display','none');
         // }
         // });
+
+        let navMenu = document.querySelector('#navMenu');
+
+        function toggle() {
+            navMenu.classList.toggle('is-active');
+        }
+
+        document.querySelector("#navButton").addEventListener('click', toggle);
     </script>
 </body>
 
